@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./extra.css">
+    <style>
+        @keyframes border-animation {
+            0% { border-color: rgb(80, 161, 50); }
+            25% { border-color: rgb(19, 185, 110); }
+            50% { border-color: rgb(16, 214, 75); }
+            75% { border-color: rgb(100, 234, 192); }
+            100% { border-color: rgb(69, 162, 34); }
+        }
+
+        .border-animate {
+            animation: border-animation 6s infinite;
+        }
+    </style>
+</head>
+<body class="bg-[#081b29]">
+    <section class=" w-full mt-4 bar ml-14" >
+
+    </section>
+    <section class="container mx-auto mt-6 text-white min-h-screen flex flex-col justify-center gap-16 text-xl md:text-2xl lg:text-3xl">
+        <div class="flex flex-col xl:flex-row items-center justify-center gap-10 xl:gap-[10%]">
+            <div class="w-[90%] xl:w-[45%] p-4 border-[10px] rounded-2xl border-red-500 border-animate hover:bg-white hover:text-black hover:border-none hover:duration-500 leading-10">
+                <div class="text-center">01</div>
+                <div>Web Development</div>
+                <div>Using HTML, CSS, and JavaScript</div>
+            </div>
+            <div class="w-[90%] xl:w-[45%] p-4 border-[10px] rounded-2xl border-red-500 border-animate hover:bg-white hover:text-black hover:border-none hover:duration-500 leading-10">
+                <div class="text-center">02</div>
+                <div>UI/UX Design</div>
+                <div>Using Figma, Sketch, and Photoshop</div>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <div class="w-[90%] xl:w-[45%] p-4 border-[10px] rounded-2xl border-red-500 border-animate hover:bg-white hover:text-black hover:border-none hover:duration-500 leading-10">
+                <div class="text-center">03</div>
+                <div>Figma Design</div>
+                <div>Client Requirement</div>
+            </div>
+        </div>
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+
+    <div class=" text-white  flex items-center    xl:flex xl:justify-between mx-auto  2xl:container 2xl:mx-auto   lg:container lg:mx-auto    lg:flex     lg:gap-24 md:gap-32   md:justify-between md:mx-auto  ">
+        <div class="xl:text-4xl md:text-3xl hover:text-[#00abf0] hover:duration-200 ">
+            <a class="w-20 lg:w-24 " href="index.html">
+                Naeem.
+            </a>
+        </div>
+        <div
+            class="font-bold flex  gap-6     items-center  lg:flex lg:justify-between  mr-40   lg:text-2xl  lg:gap-8 md:gap-5 md:text-xl  md:flex  ">
+            <a></a>
+            <a class=" cursor-pointer lg:block  text-[#00abf0]  " href="index.html" >Home</a>
+            <a class=" cursor-pointer lg:block hover:text-[#00abf0] hover:duration-200  "  href="about.html" target="_blank" >About  </a>
+            <a class=" cursor-pointer lg:block hover:text-[#00abf0] hover:duration-200  "  href="contact.html" target="_blank">Contact</a>
+            <a class=" cursor-pointer lg:block hover:text-[#00abf0] hover:duration-200    "  href="services.html">Services
+            </a>
+            <a class="hidden md:block xl:block lg:block 2xl:block" href="market_place.html">
+                <button>
+                    <span>Hire Me</span>
+                </button>
+            </a>
+            
+        </div>
+    </div>
+    <style>
+        button {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 750;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+  color: black;
+}
+
+span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+    </style>
